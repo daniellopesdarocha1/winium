@@ -15,10 +15,11 @@ namespace Calculadora_Winium
     {
         static void Main(string[] args)
         {
+
             //É necessario que o Driver.exe esteja sendo executado
             Process proc = new Process();
             proc.StartInfo.UseShellExecute = false;
-            System.Diagnostics.Process.Start(@"C:\Users\Auditeste\Documents\Daniel\Dev\c#\Calculadora_Winium\Winium.Desktop.Driver.exe");
+            System.Diagnostics.Process.Start(@"C:\Users\Auditeste\Documents\Daniel\Dev\c#\winium\Calculadora_Winium\Winium.Desktop.Driver.exe");
 
             var dc = new DesiredCapabilities();
             dc.SetCapability("app", @"C:/windows/system32/calc.exe");
